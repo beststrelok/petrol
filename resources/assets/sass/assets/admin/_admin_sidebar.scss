@@ -1,0 +1,60 @@
+.admin_sidebar_container {
+	width: 15%;
+	min-width: 185px;
+	float: left;
+	overflow: auto;
+	position: absolute;
+	top: 0px;
+	// bottom: 65px;
+	background-color: $main_black;
+	// z-index: 555;
+	height: 97%;
+	min-height: 500px;
+}
+.sidebar_fix {
+	position: fixed;
+	top: 0;
+	width: 15%;
+}
+.admin_sidebar_button {
+	color: $text;
+	font-size: 16px;
+	padding: 10px 7px 10px 15px;
+	display: block;
+	&:hover {
+		background-color: $active_background;
+		text-decoration: none;
+		color: $text;
+	}
+	&:focus {
+		background-color: $main_green;
+		text-decoration: none;
+		color: $text;
+		outline: none;
+	}
+	i {
+		margin-right: 10px;
+	}
+}
+.active_my {
+	background-color: $main_green;
+	text-decoration: none;
+	color: $text;
+	&:hover {
+		background-color: darken($main_green, 10%);
+		text-decoration: none;
+		color: $text;
+	}
+}
+// @-moz-document url-prefix() {
+//     .admin_sidebar_button {
+//         color: #eee;
+// 		padding-top: 15px;
+// 		padding-bottom: 15px;
+// 		font-size: 16px;
+// 		padding-left: 3px;
+// 		padding-right: 3px;
+// 		padding-bottom: 10px;
+// 		padding-top: 10px;
+// 	}	
+// }

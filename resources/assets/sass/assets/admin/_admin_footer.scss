@@ -1,0 +1,22 @@
+footer {
+	background-color: $main_green;
+	height: 3%;
+	min-height: 65px;
+	padding-top: 20px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.copy_footer_admin {
+	display: table;
+	margin: auto;
+}
+.copy_footer_admin {
+	a {
+		img {
+			float: right;
+			margin-left: 10px;
+			margin-top: 2px;
+		}
+	}
+}

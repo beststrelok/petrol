@@ -1,0 +1,109 @@
+header {
+	background-color: $main_black;
+	color: $text;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.header_top {
+	width: 78%;;
+	display: table;
+	margin-left: 19%;
+}
+.admin_header_btn_group {
+	button {
+		border: 0px;
+	}
+}
+.admin_to_site {
+	display: inline-block;
+	float: left;
+	// .open {
+	// 	.dropdown-menu {
+	// 		padding-right: 0;
+	// 		min-width: 122px;
+	// 	}
+	// }
+}
+.admin_exit {
+	display: inline-block;
+	float: right;
+	.fa-user {
+		margin-right: 5px;
+	}
+}
+// FOR BTN
+.admin_header_btn_group {
+	min-width: 163px;
+	>button {
+		background-color: $main_black;
+		color: $text;
+		min-width: 177px;
+		&:focus {
+			background-color: $main_black;
+			color: $text;
+		}
+		&:hover,
+		&:active {
+			background-color: $active_background;
+			color: $text;
+		}
+	}	
+}
+.admin_header_link {
+	font-weight: bold;
+	text-decoration: none;
+	color: $text;
+	padding-right: 57px;
+	&:hover {
+		background-color: $active_background;
+		text-decoration: none;
+		color: $text;
+	}
+	&:focus {
+			font-weight: bold;
+			text-decoration: none;
+			color: $text;
+	}
+}
+.btn-exit {
+	margin-left: 15px;
+	background-color: $active_background;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	&:hover {
+		color: $main_green;
+	}
+}
+.btn_link {
+	margin-left: 0;
+}
+// FOR OPENED UL
+.open {
+	>.dropdown-toggle.btn-default {
+		background-color: $active_background;
+		color: $text;
+		margin-bottom: 0;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+	>.dropdown-menu {
+		background-color: $active_background;
+		margin-top: 0;
+		border: 0px;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+		// padding-right: 84px;
+		min-width: 177px;
+		>li {
+			display: inline-block;
+			>a {
+				padding: 2px 9px;
+				color: $text;
+				&:hover {
+					color: $main_green;
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,85 @@
+.estate_block {
+	width: $main_width;
+	display: table;
+	margin: auto;
+	overflow: auto;
+	padding: 45px 35px 45px 40px;
+}
+.photos_map {
+	float: left;
+	width: 47%;
+
+}
+.text_block {
+	float: right;
+	// display: inline-block;
+	width: 47%;
+	table {
+		margin-bottom: 30px;
+		font-size: 16px;
+	}
+	p {
+		font-size: 16px;
+	}
+}
+.heading {
+	overflow: auto;
+	.icon {
+		overflow: auto;
+		.fa {
+			color: $main_blue;
+			float: right;
+			display: none;
+		}
+	}
+}
+.estate_title {
+	color: $main_blue;
+	font-size: 36px;
+	margin-top: 0;
+	font-weight: bold;
+	float: left;
+}
+.bottom {
+	width: 100%;
+	overflow: auto;
+	padding-top: 30px;
+	.call {
+		display: inline-block;
+		font-weight: 600;
+		font-size: 20px;
+		margin-left: 6%;
+		p {
+			margin-bottom: 0;
+			// display: inline-block;
+		}
+		.phone_title {
+			float: left;
+			margin-right: 10px;
+		}
+		.phone {
+			float: right;
+			color: $main_blue;
+		}
+	}
+}
+.favourite_btn {
+	// background-color: $main_blue;
+	// font-size: 30px;
+	// color: #fff;
+	@include btn (#fff, lighten($main_blue, 10%), 30px, lighten($main_blue, 10%));
+	padding-left: 110px;
+	padding-right: 110px;
+	font-weight: 200;
+	// margin-top: 20px;
+	float: left;
+}
+.favourite_btn_done {
+	@extend .favourite_btn;
+	@include btn (#fff, #6d6d6d, 30px, #6d6d6d);
+	padding-right: 114px;
+	display: none;
+}
+
+
+

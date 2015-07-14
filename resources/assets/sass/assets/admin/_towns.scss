@@ -1,0 +1,34 @@
+.admin_add_town_block {
+	width: 445px;
+	margin: auto;
+	position: relative;
+	border: 1px solid #dddddd;
+	box-shadow: 1px 2px 5px #bdbdbd;
+	button {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		font-size: 30px;
+		font-weight: bold;
+	}
+}
+.admin_one_town_add {
+	font-size: 16px;
+	font-weight: bold;
+	color: #9dcb20;
+	text-decoration: underline;
+	display: block;
+	margin-left: 160px;
+	cursor: pointer;
+	&:hover,
+	&:focus {
+		color: black;
+		color: black;
+		outline: none;
+	}
+}
+.admin_add_town_title {
+	font-size: 16px;
+	color: $main_green;
+	display: block;
+}

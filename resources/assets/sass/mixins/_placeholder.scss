@@ -1,0 +1,23 @@
+// Placeholder styles
+@mixin placeholder($color, $font, $main_font) {
+	.form-control::-webkit-input-placeholder {
+		color:$color;
+		font-size: $font;
+		font-family: $main_font
+	}
+	.form-control::-moz-placeholder {
+		color: $color;
+		font-size: $font;
+		font-family: $main_font
+	}/* Firefox 19+ */
+	.form-control:-moz-placeholder {
+		color: $color;
+		font-size: $font;
+		font-family: $main_font
+	}/* Firefox 18- */
+	.form-control:-ms-input-placeholder {
+		color: $color;
+		font-size: $font;
+		font-family: $main_font
+	}
+}

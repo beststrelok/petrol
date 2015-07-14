@@ -1,0 +1,26 @@
+/*MESSAGE*/
+.message {
+	width: $main_width;
+	position: relative;
+	// top: 255px;
+	display: table;
+	margin: auto;
+	font-size: 21px;
+	z-index: 101;
+}
+.alert {
+	padding: 2px;
+}
+.message_text {
+	display: table;
+	margin: auto;
+	text-align: center;
+}
+.close {
+	margin-top: 6px;
+	margin-right: 30px;
+}
+.close_message {
+	position: absolute;
+	right: -5px;
+}

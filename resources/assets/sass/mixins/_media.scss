@@ -1,0 +1,29 @@
+// Media mixins 
+@mixin media($type) {
+  
+  @if $type == mobile {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  
+  }
+  @else if $type == tablet {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+
+  }
+  @else if $type == laptop {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+
+  }
+  @else if $type == pc {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+
+  }
+  
+}

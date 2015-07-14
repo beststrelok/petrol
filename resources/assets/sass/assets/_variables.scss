@@ -1,0 +1,80 @@
+// GENERAL
+	$main_font: "Roboto", serif; //MAIN FONT
+	$main_width: 1203px;//MAIN CONTENT WIDTH
+	$main_black: #222222;
+	$containers_width: 1098px;
+	$main_blue: #073559;
+	$main_green: #729521;
+	$main_grey: #505050;
+	$main_black: #212121;
+
+// NAVIGATION
+	$navbar-default-bg: $main_blue;//NAV BACKGROUND
+	$navbar-default-border: $main_blue;//NAV BORGER
+	$navbar-default-brand-color: blue;//BRAND TEXT 
+	$navbar-default-brand-hover-color: black;//BRAND TEXT HOVER
+	$navbar-default-brand-hover-bg: purple;//BRAND BACKGROUND HOVER
+	$navbar-default-color: white;//NAV TEXT COLOR
+	$navbar-default-link-color: white;//NAV LINK COLOR
+	$navbar-default-link-hover-color: #fff; //NAV LINK HOVER
+	$navbar-default-link-hover-bg: lighten($main_blue, 20%);//NAV BACKGROUND HOVER
+	$navbar-default-link-active-color: #fff;//NAV ACTIVE COLOR
+	$navbar-default-link-active-bg: lighten($main_blue, 20%);// NAV ACTIVE BACKGROUND
+	
+	// for disabled
+	// $navbar-default-link-disabled-color;
+	// $navbar-default-link-disabled-bg;
+	// for toggle
+	// $navbar-default-toggle-border-color;
+	// $navbar-default-toggle-hover-bg;
+	// $navbar-default-toggle-icon-bar-bg;
+
+//LOGIN MODAL
+	$login_modal_width: auto;//MODAL WIDTH
+	$login_modal_height: auto;//MODAL HEIGHT
+	$login_modal_background: #cecece;//MODAL BACKGROUND
+	$login_modal_padding: 10px 10px 10px 10px;//MODAL PADDING
+	$login_modal_font_size: 16px;//MODAL FONT SIZE
+	$login_font: sans;//MODAL FONT
+	$login_modal_color: #292929; //FONT COLOR
+	$login_modal_title_background: #cfcfcf;//TITLE BACKGROUND
+	$login_input_w: 400px;//INPUT WIDTH
+	$login_input_outline: red;//INPUT OUTLINE
+
+//FOOTER
+	$footer_background: $main_grey;//FULL SCREEN COLOR
+	$footer_padding: 15px 5px 15px 6px;
+	$copyright_color: #fff; //FOOTER COPYRIGHT COLOR
+
+// LEFT_SIDEBAR
+	$left_sidebar_width: 20%;//SIDEBAR WIDTH
+	$left_sidebar_height: 780px;// SIDEBAR MIN HEIGHT
+	$left_sidebar_shadow: 2px 3px 7px #757171; // SIDEBAR BOX SHADOW
+	$left_sidebar_border_radius: 5px; // SIDEBAR RADIUS
+	$left_sidebar_margin: 1%;//SIDEBAR MARGIN
+
+// RIGHT_SIDEBAR
+	$right_sidebar_width: 260px;//SIDEBAR WIDTH
+	$right_sidebar_height: 780px;// SIDEBAR MIN HEIGHT
+	$right_sidebar_shadow: -2px 3px 7px #757171; // SIDEBAR BOX SHADOW
+	$right_sidebar_border_radius: 5px; // SIDEBAR RADIUS	
+	$right_sidebar_margin: 2%;//SIDEBAR MARGIN
+
+// CATALOG_INLINE
+	$catalog_inline_width: 100% - $left_sidebar_width - 5% ;//ALL CATALOG WIDTH CHANGE -5% IF NEDDED
+	$catalog_inline_margin: (100% - $catalog_inline_width - $left_sidebar_width)/2 - $left_sidebar_margin; //MARGIN FOR CATALOG FOR BOTH SIDES ADD RIGHT_SIDEBAR IF NEEDED
+	$catalog_inline_padding: 5px; //ALL CATALOG PADDING
+	// ITEM
+		$catalog_inline_item_height: 135px; //ITEM BLOCK HEIGHT
+		$catalog_inline_item_padding: 10px 10px 10px 10px; //ITEM BLOCK PADDING
+		$catalog_inline_item_color: #fff;//ITEM BACKGROUND
+		$catalog_inline_item_img_width: 75px; //ITEM IMAGE WIDTH
+		$catalog_inline_item_img_height: 75px; //ITEM IMAGE HEIGHT
+		$catalog_inline_item_img_margint_top: ($catalog_inline_item_height - $catalog_inline_item_img_height - 20px)/2;//MARGIN FOR IMG BLOCK 25 - FIRST VALUE IN ITEM PADDING
+		$catalog_inline_item_title_size: 18px; //FONT-SIZE FOR ITEM TITLE
+		$catalog_inline_item_title_width: 30px; //WIDTH OF ITEM TITLE
+		$catalog_inline_item_title_height: 50px; //HEIGHT OF ITEM TITILE
+		$catalog_inline_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
+
+
+

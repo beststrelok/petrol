@@ -1,0 +1,217 @@
+.filters_full {
+	background-color: $main_green;
+	// margin-top: -20px;
+	float: left;
+	width: 100%;
+}
+.filters {
+	width: $main_width;
+	display: table;
+	margin: auto;
+	padding: 50px 40px 53px 40px;
+	min-height: 651px;
+	h3 {
+		text-transform: uppercase;
+		color: #fff;
+		text-align: center;
+		font-weight: 300;
+		font-size: 36px;
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+	.btn-group {
+		.buttons {
+			font-size: 24px;
+			font-weight: 300;
+			padding: 0 50px 0 56px;
+			&:active,
+			&:focus,
+			&:hover {
+				outline: none;
+			}
+		}
+		.active {
+			background-color: #e6e6e6;
+			border-color: #adadad;
+			outline: none;
+		}
+	}
+}
+.filters_label {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 200;
+}
+.selects {
+	overflow: hidden;
+}
+.select_type {
+	width: 250px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 29px;
+	vertical-align: super;
+}
+.select_place {
+	width: 430px;
+}
+.city_and_district {
+	float: right;
+	width: 650px;
+}
+.type_and_period {
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+}
+.type,
+.period {
+	display: inline-block;
+}
+.type {
+	// float: left;
+	float: right;
+	margin-right: 181px;
+	.select_type {
+		margin-left: 65px;
+	}
+}
+.period {
+	// float: left;
+	margin-left: 49px;
+	width: 649px;
+	margin-top: 30px;
+	.select_period {
+		width: 430px;
+		float: right;
+
+	}
+}
+.city {
+	margin-bottom: 30px;
+}
+.select_city,
+.select_district {
+	float: right;
+}
+.draggers {
+	margin-top: 60px;
+}
+.filter_heading {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 200;
+	// text-align: center;
+}
+.first_line,
+.second_line {
+	overflow: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+.second_line {
+	// overflow: auto;
+	// padding-left: 30%;
+	// padding-right: 15%;
+	// padding-bottom: 20px;
+	// display: table;
+	// margin: auto;
+	// min-width: 80%;
+}
+.house_area,
+.yard_area,
+.price,
+.rooms,
+.sea_dist {
+	width: 29%;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: inline-block;
+	input[type='text'] {
+		width: 80px;
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+		vertical-align: super;
+	}
+	span {
+		color: #fff;
+
+	}
+}
+.house_area,
+.rooms {
+	// float: left;
+}
+.rooms {
+	// margin-left: 20%;
+	// margin-bottom: 30px;
+}
+.sea_dist {
+	// margin-right: 16%;
+	// margin-bottom: 30px;
+	.filter_heading {
+		text-align: left;
+		// margin-left: 43px;
+	}
+}
+.yard_area {
+	// margin-left: 7.5%;
+}
+.price,
+.sea_dist {
+	// float: right;
+}
+.price {
+	.filter_heading {
+		text-align: left;
+		// margin-left: 115px;
+	}
+}
+.rooms {
+	.filter_heading {
+		text-align: left;
+		// margin-left: 52px;
+	}
+}
+.sea_dist,
+.rooms {
+	// margin-top: 50px;
+}
+.house_area_slider,
+.yard_area_slider,
+.price_slider,
+.rooms_slider,
+.sea_dist_slider {
+	margin-top: 30px;
+}
+.noUi-horizontal {
+	height: 9px;
+}
+.noUi-background {
+	background: #fff;
+}
+.noUi-connect {
+	background: $main_blue;
+}
+.noUi-horizontal .noUi-handle {
+	width: 28px;
+	height: 28px;
+	left: -17px;
+	top: -11px;
+	border-radius: 15px;
+}
+.noUi-handle:after, .noUi-handle:before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 11px;
+	width: 1px;
+	background: #E8E7E6;
+	left: 11px;
+	top: 8px;
+}
+.noUi-handle:after {
+	left: 14px;
+}

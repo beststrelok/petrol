@@ -1,0 +1,44 @@
+.how_to {
+	.full_blue {
+		h3 {
+			font-size: 29px;
+		}
+	}
+}
+.icons {
+	width: $main_width;
+	display: table;
+	margin: auto;
+	padding: 55px 30px 20px 30px;
+	.search_find,
+	.call,
+	.subscribe,
+	.home {
+		display: inline-block;
+		width: 20%;
+		margin-left: 5%;
+		font-size: 22px;
+		color: #363636;
+		float: left;
+		text-align: justify;
+		.fa {
+			color: $main_blue;
+			display: table;
+			margin: auto;
+			margin-bottom: 30px;
+		}
+		.title {
+			font-weight: 600;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+}
+.info_header {
+	color: $main_green;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 29px;
+	margin-bottom: 65px;
+}

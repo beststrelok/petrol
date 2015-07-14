@@ -1,0 +1,28 @@
+.pagination_block {
+	display: table;
+	margin: auto;
+	// padding: 0px 0px;
+}
+.pagination {
+	li {
+		a {
+			font-size: 20px;
+			background-color: lighten($main_blue, 10%);
+			color: #fff;
+			border-color: lighten($main_blue, 10%); 
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: lighten($main_blue, 15%);
+				color: #fff;
+				border-color: lighten($main_blue, 15%);
+
+			}
+		}
+	}
+	.current {
+		background-color: lighten($main_blue, 15%);
+		color: #fff;
+		border-color: lighten($main_blue, 15%);
+	}
+}

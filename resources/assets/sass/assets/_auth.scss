@@ -1,0 +1,57 @@
+.login {
+	display: none;
+	.login_label {
+		font-size: $login_modal_font_size;
+		color: $login_modal_color;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+}
+.login_form {
+	.form-control {
+		width: $login_input_w;
+		// UNKOMMENT IF NEDDED
+		// display: block;
+		// outline-color: $login_input_outline;
+		// height: 34px;
+		// padding: 6px 12px;
+		// font-size: 14px;
+		// line-height: 1.42857143;
+		// color: $login_modal_color;
+		// background-color: #fff;
+		// background-image: none;
+		// border: 1px solid #ccc;
+		// border-radius: 4px;
+		// -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+		// box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+		// -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+		// -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		// transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		&:focus {
+			border-color: $login_input_outline;
+			// outline: 0;
+			// -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+			// box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px 
+		}
+	}
+	@include placeholder (yellow, 20px, $main_font);	
+}
+// FOR MODAL
+.jBox-container {
+	width: $login_modal_width;
+	height: $login_modal_height;
+	background: $login_modal_background;
+	padding: $login_modal_padding;
+	font-family: $login_font;
+	.jBox-title {
+		font-size: $login_modal_font_size;
+		color: $login_modal_color;
+		background: $login_modal_title_background;
+	}
+	.jBox-content {
+		display: table;
+		margin: auto;
+		width: auto!important;
+		height: auto!important;
+	}
+}

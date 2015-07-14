@@ -1,0 +1,9 @@
+// Image ratio (not final)
+@mixin img_ratio($width, $margin) {
+	display: block;
+	max-width: $width; //or any percantage
+	height: auto;
+	width: auto;
+	float: left;
+	margin: $margin;
+}

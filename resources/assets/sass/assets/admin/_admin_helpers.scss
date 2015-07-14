@@ -1,0 +1,43 @@
+.container_main {
+	padding-top: 0;
+	width: 75%;
+	min-width: 900px - (185px - 30px);
+	position: relative;
+	overflow: auto;
+	height: 100%;
+	// display: table;
+	// margin: auto;
+	margin-left: 20%;
+	// background-color: #fff;
+}
+.admin_main_content {
+	width: 100%;
+	// display: table;
+	// margin: auto;
+	margin-bottom: 30px;
+	background-color: #fff;
+	box-shadow: 2px 3px 7px #757171;
+	padding: 25px 30px 30px 25px;
+}
+.admin_uni_heading {
+	font-size: 24px;
+	color: $main_green;
+	margin-left: 25px;
+}
+.admin_uni_label {
+	font-size: 16px;
+	font-weight: bold;
+	color: $main_black;
+}
+.admin_uni_label {
+	>i {
+		margin-right: 5px;
+	}
+}
+.hidden {
+	display: none;
+}
+/*HIDE STANDART UPLOAD*/
+.browse_img_admin {
+	visibility: hidden;
+}

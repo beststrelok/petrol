@@ -1,0 +1,41 @@
+// AUTH
+.exit_btn {
+	@include btn(red, blue, 18px,blue);
+}
+.auth_btn {
+	@include btn(red, blue, 18px,blue);
+}
+.submit_btn {
+	@include btn(yellow, green, 18px, green);
+	margin-top: 5%;
+}
+$btn_col: lighten($main_blue, 10%);
+.more_btn {
+	@include btn(#fff, $btn_col, 24px, $btn_col);
+	display: table;
+	margin:auto;
+	margin-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.contact_us_btn {
+	@include btn(#fff, $main_green, 16px, $main_green);
+	font-weight: 400;
+	padding: 3px 20px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	text-transform: uppercase;
+	.fa {
+		margin-left: 20px;
+	}
+	@include rotate(270deg);
+	position: fixed;
+	left: -92px;
+	top: 55%;
+}
+.sort_btn {
+	@include btn(#fff, lighten($main_blue, 10%), 24px, lighten($main_blue, 10%));
+	display: table;
+	margin: auto;
+	// margin-top: 30px;
+}

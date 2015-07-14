@@ -1,0 +1,26 @@
+$modal_background: #fff;
+$modal_padding: 10px 0px 0px 0px;
+$font: $main_font;
+$modal_font_size: 16px;
+$modal_color: #cec;;
+$modal_title_background: red;
+
+.jBox-Modal {
+	.jBox-container {
+		background: $modal_background;
+		padding: $modal_padding;
+		font-family: $font;
+		.jBox-title {
+			font-size: $modal_font_size;
+			color: $modal_color;
+			background: $modal_title_background;
+		}
+		.jBox-content {
+			display: table;
+			margin: auto;
+			// width: auto!important;
+			height: auto!important;
+			padding: 0;
+		}
+	}
+}

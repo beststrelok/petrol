@@ -1,0 +1,48 @@
+.icon {
+	display: inline-block;
+	width: 20%;
+	margin-right: 2%;
+	margin-left: 2%;
+	background-color: $main_green;
+	color: $main_black;
+	margin-bottom: 50px;
+	font-size: 18px;
+	// padding: 10px 10px;
+	&:hover{
+		background-color: $main_black;
+	}
+	a {
+		display: block;
+		color: $main_black;
+		text-align: center;
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	.active_my {
+		color: #fff;
+	}
+}
+.active_icon_block {
+	background-color: $main_black;
+	.active_my {
+		color: #fff;
+		background-color: $main_black;
+	}
+}
+.admin_panel_btn {
+	@include btn(#fff, $main_green, 24px, darken($main_green, 10%));
+	display: table;
+	margin: auto;
+}
+.alt_variant,
+.contact_support_heading {
+	text-align: center;
+	color: $main_green;
+	font-size: 15px;
+	margin-top: 15px;
+}
+.contact_support_heading {
+	font-size: 24px;
+}

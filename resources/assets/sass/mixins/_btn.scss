@@ -1,0 +1,13 @@
+@mixin btn ($color, $background, $size, $border) {
+	color: $color;
+	background: $background;
+	font-size: $size;
+	border-color: $border;
+	&:hover,
+	&:focus,
+  	&.focus  {
+		color: $color;
+		background: darken($background, 10%);
+        border-color: darken($border, 12%);
+	}
+}

@@ -1,0 +1,40 @@
+.filters_full {
+	float: none;
+	// width: 87%;
+	display: inline-block;
+	.filters {
+		margin: 0;
+		width: 100%;
+		select {
+			width: 66%;
+		}
+		.select_type {
+			width: 250px;
+		}
+	}
+	.draggers {
+		.filters_label {
+			font-size: 14px;
+		}
+	}
+	.house_area input[type='text'], .yard_area input[type='text'], .price input[type='text'], .rooms input[type='text'], .sea_dist input[type='text'] {
+			width: 65px;
+	}
+}
+.results_heading {
+	font-size: 36px;
+	color: $main_black;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+}
+.catalog_full,
+.catalog_blocks {
+	width: 100%;
+	background: transparent;
+}
+.one_item {
+	width: 30%;
+	margin-left: 1%;
+}
+// width: 66%;

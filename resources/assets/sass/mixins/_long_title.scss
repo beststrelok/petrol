@@ -1,0 +1,17 @@
+// Two mixins for long titles(not final)
+@mixin long_title_first($width) {
+	max-width: $width;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+@mixin long_title_second($color, $border_width, $border_color, $border_radius) {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	white-space: nowrap;
+	background-color: $color;
+	border-radius: $border_radius;
+	border: $border_width solid $border_color;
+}

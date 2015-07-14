@@ -1,0 +1,11 @@
+.stocks {
+  margin-top: 20px; }
+  .stocks thead tr {
+    background: #B8C6DA; }
+
+.message .message_text, .message .error_message {
+  text-align: center;
+  font-size: 18px; }
+
+.delete_stock {
+  cursor: pointer; }

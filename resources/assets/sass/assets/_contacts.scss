@@ -1,0 +1,53 @@
+.main_contacts {
+	width: $main-width;
+	display: table;
+	margin: auto;
+	padding: 50px 25px 50px 70px;
+}
+.left_block {
+	display: inline-block;
+	float: left;
+	width: 30%;
+}
+.right_contacts {
+	float: right;
+	display: inline-block;
+	background-color: #dee6cc;
+	padding: 55px 45px 158px 50px;
+	color: $main_black;
+	font-size: 22px;
+	h3 {
+		color: $main_green;
+		text-align: justify;
+		font-size: 30px;
+		font-weight: 600;
+		margin-top: 0;
+		margin-bottom: 35px;
+	}
+	.email,
+	.tel,
+	.individual {
+		overflow: auto;
+		margin-bottom: 0;
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.title {
+		font-weight: bold;
+		float: left;
+		margin-right: 25px;
+	}
+	.value {
+		// float: right;
+	}
+	.individual {
+		margin-top: 35px;
+		.title {
+			float: none;
+		}
+		.value {
+			float: none;
+		}
+	}
+}

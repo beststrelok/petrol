@@ -1,0 +1,158 @@
+//VAR	
+$catalog_width: $main_width;
+$catalog_background: #fff;
+$item_background: #d9e7f1;
+$item_img_width: 300px;
+$item_img_height: 225px;
+.catalog_full {
+	background-image: url(../img/layout/pattern007.png);
+}
+.catalog_blocks {
+	width: $catalog_width;
+	display: table;
+	margin: auto;
+	overflow: auto;
+	background-color: $catalog_background;
+	background-image: url(../img/layout/pattern007.png);
+}
+
+.one_item {
+	width: 27%;
+	background-color: $item_background;
+	margin-bottom: 5%;
+	padding: 10px 0px 25px 0px;
+	margin-left: 6%;
+	float: left;
+	.img {
+		background-color: #d9e7f1;
+		max-width: $item_img_width;
+		max-height: $item_img_height;
+		min-width: $item_img_width;
+		min-height: $item_img_height;
+		display: table;
+		margin: auto;
+		position: relative;
+		@include clearfix();
+		// margin-bottom: 45px;
+		padding-left: 10px;
+		padding-right: 10px;
+		.add_to,
+		.added_to {
+			// float: right;
+			margin-top: 3px;
+			font-size: 16px;
+			color: $main_blue;
+			a {
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 16px;
+				margin-bottom: 0;
+				color: $main_blue;
+				cursor: pointer;
+				&:hover {
+					color: $main_blue;
+					text-decoration: none;
+				}
+			}
+		}
+		.fa {
+			// color: $main_blue;
+			// position: absolute;
+			// top: 0px;
+			// right: 20px;
+			// text-shadow: 2px 2px 2px $main_blue;
+			color: #073559;
+			/* position: absolute; */
+			/* top: 0px; */
+			/* right: 20px; */
+			// text-shadow: 2px 2px 2px #073559;
+			margin-top: -6px;
+			// float: right;
+			// vertical-align: top;
+			margin-right: 20px;
+			float: left;
+		}
+		.added_to {
+			display: none;
+		}
+	}
+	.item_img {
+		max-width: $item_img_width;
+		max-height: $item_img_height;
+		display: table;
+		margin: auto;
+	}
+	.item_title {
+		// text-align: center;
+		font-weight: 600;
+		// font-size: 14px;
+		// text-transform: uppercase;
+		// min-height: 50px;
+		// max-height: 50px;
+		overflow: hidden;
+		color: $main_blue;
+		font-size: 36px;
+		margin-left: 15px;
+		a {
+			color: inherit;
+			cursor: pointer;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.short_title {
+		.second {
+			font-size: 24px;
+			min-height: 30px;
+			max-height: 30px;
+		}
+	}
+	.short_descr {
+		position: relative;
+		// top: -10px;
+		@include height_overflow(item_descr, 100px, 20px, $item_background, 75%, $item_background);
+	}
+	.item_descr {
+		font-size: 14px;
+		color: $main_black;
+		padding-bottom: 10px;
+		table {
+			margin-left: 15px;
+			td {
+				padding-right: 20px;
+			}
+		}
+	}
+	.price {
+		overflow: hidden;
+		display: table;
+		margin: auto;
+	}
+	.item_price {
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		float: left;
+	}
+	.item_currency {
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		float: right;
+		text-transform: uppercase;
+		margin-top: 12px;
+		margin-left: 10px;
+	}
+}
+.more_item {
+	// display: table;
+	// margin: auto;
+	margin-bottom: 5%;
+	font-size: 25px;
+	.fa {
+		margin-left: 5%;
+		margin-right: 5%;
+		display: none;
+	}
+}

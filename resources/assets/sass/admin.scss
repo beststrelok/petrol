@@ -1,0 +1,98 @@
+// CORE
+$browser-prefixes: true !default;
+@import "assets/juice";
+// MIXINS
+@import "assets/mixins";
+// VARIABLES
+@import "assets/variables";
+// VAR
+$main_green: #9dcb20;
+$main_black: #222;
+$active_background: lighten($main_black, 20%);
+$text: #eee;
+$main_font: 'PT Sans', sans-serif;
+// GENERAL
+/*GENERAL*/
+html {
+	min-height: 100%;
+	padding-bottom: 65px;
+	height: auto;
+	position: relative;
+}
+body {
+	font-family: $main_font;
+	background-color: #ececec;
+}
+// HELPERS
+/*HEPLERS*/
+@import "assets/admin/admin_helpers";
+
+// BUTTONS
+/*BUTTONS*/
+@import "assets/admin/admin_buttons";
+
+// FLASH MESSAGES
+/*FLASH MESSAGES*/
+@import "assets/flash_messages";
+
+// LOGIN
+/*LOGIN*/
+@import "assets/admin/login";
+
+// MODAL
+/*MODAL*/
+// FOR MODAL
+$admin_modal_width: auto;
+$admin_modal_height: auto;
+$admin_modal_background: #fff;
+$admin_modal_padding: 10px;
+$admin_font: $main_font;
+$admin_modal_font_size: 16px;
+$admin_modal_color: #cec;;
+$admin_modal_title_background: red;
+
+.jBox-container {
+	width: $admin_modal_width;
+	height: $admin_modal_height;
+	background: $admin_modal_background;
+	padding: $admin_modal_padding;
+	font-family: $admin_font;
+	.jBox-title {
+		font-size: $admin_modal_font_size;
+		color: $admin_modal_color;
+		background: $admin_modal_title_background;
+	}
+	.jBox-content {
+		display: table;
+		margin: auto;
+		width: auto!important;
+		height: auto!important;
+	}
+}
+// PARTIALS
+// HEADER
+/*HEADER*/
+@import "assets/admin/admin_header";
+
+// HEADER
+/*HEADER*/
+@import "assets/main_page";
+@import "assets/catalog_estate";
+@import "assets/filters";
+@import "assets/pagination";
+@import "assets/admin/admin_estates";
+
+
+
+
+// LEFT SIDEBAR
+/*LEFT SIDEBAR*/
+@import "assets/admin/admin_sidebar";
+
+// FOOTER
+/*FOOTER*/
+@import "assets/admin/admin_footer";
+
+// MAIN_PAGE
+/*MAIN_PAGE*/
+@import "assets/admin/admin";
