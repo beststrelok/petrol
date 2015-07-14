@@ -6,7 +6,6 @@ class DatabaseSeeder extends Seeder {
 	public function run() {
 		// Model::unguard();
 
-		$this->call('PetrolSeeder');
 		$this->call('RegionSeeder');
 		$this->call('QuotationSeeder');
 	}

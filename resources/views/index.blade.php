@@ -26,7 +26,7 @@
 					<tr>
 						<td>{{ $quotation->quotation_id }}</td>
 						<td>{{ sprintf("%.2f", $quotation->price) }}</td>
-						<td>{{ $quotation->petrol_title }}</td>
+						<td>{{ $quotation->petrol }}</td>
 						<td>{{ $quotation->region_title }}</td>
 						<td>{{ Carbon::parse($quotation->added_on)->format('Y-m-d') }}</td>
 						<td>

@@ -4,7 +4,9 @@ use App\Http\Controllers\Controller;
 use Auth;
 use Request;
 use Quotation;
+use Region;
 use Goutte\Client;
+use Carbon;
 
 class MainController extends Controller {
 	public function index() {
@@ -14,51 +16,46 @@ class MainController extends Controller {
 
 	public function parse() {
 		$url = 'http://korrespondent.net/business/indexes/fuel/';
-		$quotation = [];
-
 		$client = new Client();
-		// $client = new Client();
 		$crawler = $client->request('GET', $url);
 		$rows = count($crawler->filter('#sort_table_569 tbody tr'));
+		$data = [];
+		$time = Carbon::now();
+
 
 		foreach (range(0, $rows-1) as $row) {
-			$crawler->filter('#sort_table_569 tbody tr')->eq($row)->html();
+			$quotation = [];
+			$region = $crawler->filter('#sort_table_569 tbody tr')->eq($row);
+			$region_title = $region->filter('td')->eq(0)->html();
+			$region_id = Region::where('region_title', $region_title)->lists('region_id')[0];
+			
+			$quotation_A76_80 = [
+				'price'		=> $region->filter('td')->eq(1)->html(),
+				'petrol'	=> 'A76/80',
+				'region_id' => $region_id,
+				'added_on'	=> $time,
+			];
+			$quotation_A92 = [
+				'price'		=> $region->filter('td')->eq(2)->html(),
+				'petrol'	=> 'A92',
+				'region_id' => $region_id,
+				'added_on'	=> $time,
+			];
+			$quotation_A95 = [
+				'price'		=> $region->filter('td')->eq(3)->html(),
+				'petrol'	=> 'A95',
+				'region_id' => $region_id,
+				'added_on'	=> $time,
+			];
+
+			$data[] = $quotation_A76_80;
+			$data[] = $quotation_A92;
+			$data[] = $quotation_A95;
 		}
 
-		// A76/80
-		// A92
-		// A95
-		$quotation['region_title'] = $crawler->filter('#sort_table_569');
-		$crawler->filter('.dataTable tbody tr')->first()->filter('td')->eq(0)->text();
+		Quotation::insert($data);
 
-		
-
-		// PRICE
-		$price = 
-		$data['price'] = $price;
-
-		// HIGH
-		$high = $crawler->filter('.commonTable')->eq(0)->filter('tbody td')->eq(1)->text();
-		$data['high'] = $high;
-
-		// LOW
-		$low = $crawler->filter('.commonTable')->eq(0)->filter('tbody td')->eq(2)->text();
-		$data['low'] = $low;
-
-		// VOLUME
-		$volume = $crawler->filter('.commonTable')->eq(0)->filter('tbody td')->eq(3)->text();
-		$volume = str_replace(",", "", $volume);
-		$data['volume'] = $volume;
-
-		// DELTA
-		$delta = $crawler->filter('.commonTable')->eq(0)->filter('tbody td')->eq(5)->text();
-		$delta = $this->stringify($delta);
-		$data['delta'] = $delta;
-
-		// DATE
-		$data['date'] = Carbon::now();
-
-		Price::create($data);
+		return redirect()->route('index');
 	}
 
 

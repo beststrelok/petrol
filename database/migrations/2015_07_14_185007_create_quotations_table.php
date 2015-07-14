@@ -16,7 +16,7 @@ class CreateQuotationsTable extends Migration {
 		{	
 			$table->increments('quotation_id');
 			$table->decimal('price', 12, 6);
-			$table->integer('petrol_id')->unsigned()->index();
+			$table->string('petrol', 64);
 			$table->integer('region_id')->unsigned()->index();
 			$table->timestamp('added_on');
 		});
