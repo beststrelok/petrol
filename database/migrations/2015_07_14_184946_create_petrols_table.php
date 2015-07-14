@@ -15,7 +15,7 @@ class CreatePetrolsTable extends Migration {
 		Schema::create('petrols', function(Blueprint $table)
 		{
 			$table->increments('petrol_id');
-			$table->string('title', 64);
+			$table->string('petrol_title', 64);
 		});
 	}
 

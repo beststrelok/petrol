@@ -200,6 +200,7 @@ return [
 		'HTML'		=> 'Illuminate\Html\HtmlFacade',
 		'Carbon' 	=> 'Carbon\Carbon',
 		'Faker'		=> 'Faker\Factory',
+		'Client'	=> 'Goutte\Client',
 
 
 		/*------------------------------------------------

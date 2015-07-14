@@ -15,7 +15,7 @@ class CreateRegionsTable extends Migration {
 		Schema::create('regions', function(Blueprint $table)
 		{
 			$table->increments('region_id');
-			$table->string('title', 64);
+			$table->string('region_title', 64);
 		});
 	}
 

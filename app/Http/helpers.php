@@ -29,6 +29,7 @@
 
 	function v() {
 		$route_views = [
+			'index'			=> 'index',
 			// ITEMS
 			'add_item'		=> 'admin/add_item',
 			'create_item'	=> null,
