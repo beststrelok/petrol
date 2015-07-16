@@ -4,6 +4,9 @@ use Closure;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 
 class VerifyCsrfToken extends BaseVerifier {
+	// protected $except = [
+	//   '*'
+	// ];
 
 	/**
 	 * Handle an incoming request.
@@ -14,6 +17,19 @@ class VerifyCsrfToken extends BaseVerifier {
 	 */
 	public function handle($request, Closure $next)
 	{
+
+		// //disable CSRF check on following routes
+		// $skip = [
+		// 	'ajax_set_date',
+		// ];
+
+		// foreach ($skip as $key => $route) {
+		// 	//skip csrf check on route
+		// 	if ($request->is($route)) {
+		// 		return parent::addCookieToResponse($request, $next($request));
+		// 	}
+		// }
+		 
 		return parent::handle($request, $next);
 	}
 

@@ -148,6 +148,7 @@ return [
 		/*----------------------------------------------*/
 		'Illuminate\Html\HtmlServiceProvider',
 		'App\Providers\ViewComposerServiceProvider',
+		'Barryvdh\Cors\ServiceProvider',
 	],
 
 	/*

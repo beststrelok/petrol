@@ -5,38 +5,45 @@
 
 @section('body')
 	<div class="main_page container">
-		@include('partials/flash_messages')
-		{{ Form::open(['url'=>l('parse'), 'method'=>'POST', 'class'=>'parse_form']) }}
-			{{ Form::submit('Parse prices', ['class'=>'form-control']) }}
-		{{ Form::close() }}
+		<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+			<input class='btn_fixed datepicker form-control btn btn-warning' value="{{ Carbon::today()->format('d/m/Y') }}" readonly="readonly">
+		</div>
 
-		<table class="quotations table table-striped">
+		@include('partials/flash_messages')
+		<div class="col-lg-8 col-md-6 col-sm-6 col-xs-4"></div>
+		<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+			{{ Form::open(['url'=>l('parse'), 'method'=>'POST', 'class'=>'parse_form']) }}
+				{{ Form::submit('UPDATE PRICES', ['class'=>'btn_fixed form-control btn btn-info btn-md']) }}
+			{{ Form::close() }}
+		</div>
+
+		<table class="quotations table table-striped table-hover table-bordered table-condensed table-responsive">
 			<thead>
-				<tr>
-					<td>#quotation_id</td>
-					<td>price</td>
-					<td>petrol</td>
-					<td>region</td>
-					<td>added_on</td>
-					<td></td>
+				<tr class='grey_tr'>
+					<th>Region</th>
+					<th class='text-center'>A76/80</th>
+					<th class='text-center'>A92</th>
+					<th class='text-center'>A95</th>
 				</tr>
 			</thead>
 			<tbody>
 				@foreach ($quotations as $quotation)
 					<tr>
-						<td>{{ $quotation->quotation_id }}</td>
-						<td>{{ sprintf("%.2f", $quotation->price) }}</td>
-						<td>{{ $quotation->petrol }}</td>
 						<td>{{ $quotation->region_title }}</td>
-						<td>{{ Carbon::parse($quotation->added_on)->format('Y-m-d') }}</td>
-						<td>
-							{{ Form::open(['url'=>'/remove_quotation/$quotation->quotation_id', 'method'=>'POST', 'class'=>'add_quotation']) }}
-								<i aria-hidden="true" class="fa fa-times form_submit delete_quotation"></i>
-							{{ Form::close() }}
-						</td>
+						<td class='text-center'>{{ sprintf("%.2f", $quotation->A76_80) }}</td>
+						<td class='text-center'>{{ sprintf("%.2f", $quotation->A92) }}</td>
+						<td class='text-center'>{{ sprintf("%.2f", $quotation->A95) }}</td>
 					</tr>
 				@endforeach
 			</tbody>
+			<tfoot>
+				<tr class='grey_tr'>
+					<th>Region</th>
+					<th class='text-center'>A76/80</th>
+					<th class='text-center'>A92</th>
+					<th class='text-center'>A95</th>
+				</tr>
+			</tfoot>
 		</table>
 	</div>
 @stop

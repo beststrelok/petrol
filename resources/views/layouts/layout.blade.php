@@ -9,6 +9,7 @@
 
 		{{ HTML::style('css/vendor/bootstrap.min.css') }}
 		{{ HTML::style('css/vendor/font-awesome.min.css') }}
+		{{ HTML::style('css/vendor/jquery-ui.min.css') }}
 {{-- 		{{ HTML::style('css/vendor/jquery.nouislider.min.css') }}
 		{{ HTML::style('css/vendor/fotorama.css') }}
 		{{ HTML::style('css/vendor/jBox/jBox.css') }} --}}
@@ -17,6 +18,7 @@
 
 		{{ HTML::script('js/vendor/jquery.min.js') }}
 		{{ HTML::script('js/vendor/bootstrap.min.js') }}
+		{{ HTML::script('js/vendor/jquery-ui.min.js') }}
 		{{-- {{ HTML::script('js/vendor/jquery.nouislider.all.min.js') }} --}}
 		{{-- {{ HTML::script('https://maps.googleapis.com/maps/api/js?v=3.exp') }} --}}
 		{{-- {{ HTML::script('js/vendor/fotorama.js') }} --}}

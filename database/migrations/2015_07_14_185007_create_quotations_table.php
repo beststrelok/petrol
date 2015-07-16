@@ -15,8 +15,9 @@ class CreateQuotationsTable extends Migration {
 		Schema::create('quotations', function(Blueprint $table)
 		{	
 			$table->increments('quotation_id');
-			$table->decimal('price', 12, 6);
-			$table->string('petrol', 64);
+			$table->decimal('A76_80', 12, 6);
+			$table->decimal('A92', 12, 6);
+			$table->decimal('A95', 12, 6);
 			$table->integer('region_id')->unsigned()->index();
 			$table->timestamp('added_on');
 		});

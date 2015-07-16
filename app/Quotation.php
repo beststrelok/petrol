@@ -1,6 +1,7 @@
 <?php namespace App;
 
 use App\BaseModel;
+use Carbon;
 
 class Quotation extends BaseModel {
 	public 	  $timestamps = false;
@@ -14,5 +15,9 @@ class Quotation extends BaseModel {
 
 	public function scopeJoined($query) {
 		return $query->join('regions', 'quotations.region_id', '=', 'regions.region_id');
+	}
+
+	public function scopeToday($query) {
+		return $query->where('added_on', Carbon::today());
 	}
 }
